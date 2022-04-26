@@ -611,13 +611,14 @@
                         <input type="hidden" name="_autoresponse" value="Thanks for reaching out! Will respond to you as soon as possible. :) -Almond">
 
                         <div class="form-btn text-center">
-                            <button class="button" type="submit">send message</button>
+                            <button class="button" type="submit" onclick="myFunction()">send message</button>
+                            <br><br>
                             <p id="notif"></p>
                         </div>
                         
                         <script>
                         function myFunction() {
-                            document.getElementById("notif").innerHTML = "Your message was successfully sent.";
+                            document.getElementById("notif").innerHTML = "Please fill out the fields. Once done, disregard this warning. Your message will then be sent in a short while.";
                         }
                         </script>
                         
